@@ -47,7 +47,7 @@ def is_of_age(age):
 
 def vowel(character):
     """Returnerar true om 'character' är en vokal, annart false."""
-    if character.lower () in "aouiyåäö":
+    if character.lower() in "aoueiyåäö":
         return True
     return False
 
