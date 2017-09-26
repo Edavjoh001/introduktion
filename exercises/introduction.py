@@ -6,7 +6,8 @@ def repeat(string, num):
 
     Returnerar en ny sträng eller en tom sträng om num är negativt.
     """
-    pass
+    return string * num
+
 
 def bouncer(items):
     """Tar bort alla värden i items (arg 1) som evalueras till False."""
@@ -26,22 +27,29 @@ def rovarsprak(string):
 
 def area(width, height):
     """Returnerar arean av en figur med bredden 'width' och höjden 'height'."""
-    pass
+    return width * height
 
 
 def to_seconds(time):
     """Returnerar en float `time` (timmar) till sekunder."""
-    pass
+    return 60 ** time
 
 
 def is_of_age(age):
     """Returnerar true om 'age' är större eller lika med 18, annars false."""
-    pass
+    if age >= 18:
+        return True
+    else:
+        return False
+
+
 
 
 def vowel(character):
     """Returnerar true om 'character' är en vokal, annart false."""
-    pass
+    if character.lower () in "aouiyåäö":
+        return True
+    return False
 
 
 def reverse(words):
