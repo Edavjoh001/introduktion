@@ -11,7 +11,11 @@ def repeat(string, num):
 
 def bouncer(items):
     """Tar bort alla värden i items (arg 1) som evalueras till False."""
-    pass
+    result = []
+    for item in items:
+        if item:
+                result.append(item)
+    return result
 
 
 def rovarsprak(string):
@@ -32,7 +36,7 @@ def area(width, height):
 
 def to_seconds(time):
     """Returnerar en float `time` (timmar) till sekunder."""
-    return 60 ** time
+    return time * 60 * 60
 
 
 def is_of_age(age):
@@ -41,8 +45,6 @@ def is_of_age(age):
         return True
     else:
         return False
-
-
 
 
 def vowel(character):
@@ -58,12 +60,16 @@ def reverse(words):
     words = "Hej på dig!" ska till exempel returnera
     strängen "!gid åp jeH".
     """
-    pass
+    return words[::-1]
 
 
 def overlapping(list1, list2):
     """Returnerar True om listorna har åtminstone ett gemensamt objekt."""
-    pass
+    for item_from_list1 in list1:
+        for item_from_list2 in list2:
+            if item_from_list1 == item_from_list2:
+                return True
+    return False
 
 
 def is_palindrome(words):
